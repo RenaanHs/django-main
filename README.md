@@ -55,6 +55,7 @@ python manage.py runserver
 A estrutura básica dos arquivos do projeto Django é a seguinte:
 
 tarefas/
+
 ├── admin.py               # Registra o modelo no admin do Django
 
 ├── apps.py                # Configurações do app
@@ -174,12 +175,6 @@ class TarefaModelTest(TestCase):
         user = User.objects.create(username='testuser')
         tarefa = Tarefa.objects.create(descricao='Testar tarefa', user=user)
         self.assertEqual(str(tarefa), 'Testar tarefa')
-
-
-11. Considerações Finais
-Esta aplicação de gerenciamento de tarefas foi projetada para ser simples e eficiente, com foco em gerenciar as tarefas de cada usuário de maneira personalizada. Expansões futuras podem incluir funcionalidades como filtros avançados de tarefas, notificações e uma interface mais robusta.
-
-Essa é uma estrutura inicial que pode ser expandida conforme necessário. Você também pode adicionar mais exemplos, capturas de tela, e incluir detalhes específicos do seu projeto!
 
 
 
