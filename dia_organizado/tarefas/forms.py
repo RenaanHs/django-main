@@ -17,22 +17,23 @@ class EditarTarefaForm(forms.Form):
 
     tarefa = forms.CharField(max_length=400)
     categoria = forms.ChoiceField(choices=OPCOES_CATEGORIA)
+
+
 class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = User
-        fields = ('username', 'password1', 'password2')
+        fields = ('username', 'email', 'password1', 'password2')
         labels = {
             'username': 'Nome de usuário',
+            'email': 'Email',
             'password1': 'Senha',
-            'password2': 'Confirmação da senha',
+            'password2': 'Confirmar senha',
         }
         help_texts = {
-            'username': '',
-            'password1': (
-                'Sua senha deve conter pelo menos 8 caracteres. '
-                'Sua senha não pode ser totalmente numérica.'
-            ),
-            'password2': '',
+            'username': None,  
+            'email': None, 
+            'password1': None,
+            'password2': None,
         }
         error_messages = {
             'password_mismatch': 'As senhas não correspondem.',
