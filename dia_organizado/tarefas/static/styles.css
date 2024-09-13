@@ -1,0 +1,74 @@
+/* styles.css */
+
+/* Define o estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define o estilo para o contêiner principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Define o estilo para os cabeçalhos */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Define o estilo para os links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Define o estilo para os formulários */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Define o estilo para as listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+    border-bottom: none;
+}
