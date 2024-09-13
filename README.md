@@ -56,11 +56,17 @@ A estrutura básica dos arquivos do projeto Django é a seguinte:
 
 tarefas/
 ├── admin.py               # Registra o modelo no admin do Django
+
 ├── apps.py                # Configurações do app
+
 ├── forms.py               # Formulários personalizados
+
 ├── models.py              # Modelos de dados (Tarefa, Usuários)
+
 ├── urls.py                # Mapeamento de URLs
+
 ├── views.py               # Funções de visualização (Views)
+
 
 4. Descrição das Funcionalidades
 Funcionalidades Principais:
